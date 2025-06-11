@@ -20,6 +20,7 @@ import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.Navigator
 import cafe.adriel.voyager.transitions.SlideTransition
 import com.buruel.navigator.bottombar.BottomBarScreen
+import com.buruel.navigator.settings.ProfileScreen
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
@@ -54,6 +55,12 @@ class MainScreen : Screen {
             }) {
                 Text("BottomBar")
             }
+            Spacer(Modifier.height(18.dp))
+            Button(onClick = {
+                navigator?.push(ProfileScreen())
+            }) {
+                Text("Navegacion con persistencia")
+            }
         }
     }
 }
@@ -73,6 +80,7 @@ class SecondScreen : Screen {
             }) {
                 Text("Volver")
             }
+            Spacer(modifier = Modifier.height(16.dp))
         }
     }
 }

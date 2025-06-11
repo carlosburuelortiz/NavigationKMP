@@ -42,6 +42,7 @@ kotlin {
             implementation(libs.voyager.navigator)
             implementation(libs.voyager.transitions)
             implementation(libs.voyager.tabNavigator)
+            implementation(libs.multiplatform.settings.no.arg)
             implementation(compose.runtime)
             implementation(compose.runtime)
             implementation(compose.foundation)
