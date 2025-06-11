@@ -41,6 +41,7 @@ kotlin {
         commonMain.dependencies {
             implementation(libs.voyager.navigator)
             implementation(libs.voyager.transitions)
+            implementation(libs.voyager.tabNavigator)
             implementation(compose.runtime)
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -50,6 +51,7 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            implementation(libs.font.awesome)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
